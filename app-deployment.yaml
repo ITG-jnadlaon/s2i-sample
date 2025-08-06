@@ -11,7 +11,7 @@ spec:
   source:
     type: Git
     git:
-      uri: https://github.com/your-username/your-repo.git
+      uri: https://github.com/ITG-jnadlaon/s2i-sample.git
   strategy:
     type: Source
     sourceStrategy:
@@ -22,7 +22,7 @@ spec:
   output:
     to:
       kind: ImageStreamTag
-      name: s2i-mongodb-app:latest
+      name: s2i-mongodb-app:latest      
   triggers:
   - type: ConfigChange
   - type: ImageChange
