@@ -14,7 +14,7 @@ oc new-app mongodb-persistent \
   -p MONGODB_ADMIN_PASSWORD=adminpass123
 
 # Deploy Node.js application using S2I
-oc new-app nodejs:18-ubi8~https://github.com/your-username/your-repo.git](https://github.com/ITG-jnadlaon/s2i-sample \
+oc new-app nodejs:18-ubi8~https://github.com/ITG-jnadlaon/s2i-sample \
   --name=s2i-mongodb-app \
   -e MONGODB_URI=mongodb://appuser:secretpass123@mongodb:27017/myapp \
   -e MONGODB_DATABASE=myapp
